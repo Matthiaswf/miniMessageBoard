@@ -6,6 +6,14 @@
     <title>Document</title>
   </head>
   <body>
-    Index
+    <h1>Messages</h1>
+    <ul>
+      <% messages.forEach((message) => { %>
+        <li>
+            <p><%= `${message.user} says:${message.text}`%></p>
+              <p><%= message.added %></p>  
+          </li>
+      <% 
+    }); %>
   </body>
 </html>
